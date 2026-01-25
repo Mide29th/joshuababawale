@@ -1,51 +1,120 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Axiforma';
+  src: url('/fonts/Axiforma-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('/fonts/Axiforma-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('/fonts/Axiforma-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('/fonts/Axiforma-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('/fonts/Axiforma-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url('/fonts/Axiforma-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #F8F9FA;
-  --foreground: #171717;
-  --accent: #0047AB;
-  --accent-glow: rgba(0, 71, 171, 0.15);
+  --background: #fdfdfd;
+  --foreground: #0a0a0a;
+  --accent: #0051ff;
+  --accent-glow: rgba(0, 81, 255, 0.12);
+  --secondary: #64748b;
+  --muted: #f1f5f9;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+
+  --font-sans: "Axiforma", system-ui, sans-serif;
+  --font-serif: "Axiforma", serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
   margin: 0;
   padding: 0;
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* The Blue Aura Vignette */
+/* The Blue Aura Vignette - Premium Refinement */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 9999;
-  border: 40px solid var(--accent-glow);
-  box-shadow: inset 0 0 100px var(--accent-glow);
-  mask-image: radial-gradient(circle, transparent 50%, black 100%);
-  opacity: 0.6;
+  border: 30px solid var(--accent-glow);
+  box-shadow: inset 0 0 120px var(--accent-glow);
+  mask-image: radial-gradient(circle at center, transparent 40%, black 100%);
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
 }
 
 @media (min-width: 1024px) {
   body::before {
-    border-width: 60px;
+    border-width: 50px;
+    box-shadow: inset 0 0 150px var(--accent-glow);
   }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .dark-section {
   --background: #000000;
   --foreground: #ffffff;
+  --accent-glow: rgba(0, 81, 255, 0.2);
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
 }
