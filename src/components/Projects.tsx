@@ -50,7 +50,7 @@ export function Projects() {
                         >
                             Portfolio
                         </motion.span>
-                        <h2 className="text-6xl md:text-9xl font-bold tracking-tighter leading-[0.8] font-serif">
+                        <h2 className="text-6xl md:text-9xl font-bold tracking-tighter leading-[1.1] font-serif">
                             Selected <br /> Work
                         </h2>
                     </div>
