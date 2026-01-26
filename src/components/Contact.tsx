@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 import { Mail, MapPin, ArrowUpRight, Github, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const socialLinks = [
-    { name: "LinkedIn", href: "#", icon: Linkedin },
-    { name: "Twitter", href: "#", icon: Twitter },
-    { name: "Instagram", href: "#", icon: Instagram },
-    { name: "GitHub", href: "#", icon: Github },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/joshuababawale/", icon: Linkedin },
+    { name: "X", href: "https://x.com/i_am_oshea", icon: Twitter },
+    { name: "Instagram", href: "https://www.instagram.com/iamoshea/", icon: Instagram },
+    { name: "Behance", href: "https://www.behance.net/babawalejoshua", icon: ArrowUpRight },
+    { name: "GitHub", href: "https://github.com/Mide29th", icon: Github },
 ];
 
 export function Contact() {
@@ -40,13 +41,13 @@ export function Contact() {
                         </p>
 
                         <div className="space-y-8">
-                            <a href="mailto:hello@jbabawale.com" className="flex items-center gap-6 group">
+                            <a href="mailto:jbabawale1@gmail.com" className="flex items-center gap-6 group">
                                 <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-all duration-500 scale-90 group-hover:scale-100">
                                     <Mail className="w-6 h-6" />
                                 </div>
                                 <div>
                                     <p className="text-xs text-white/20 uppercase font-black tracking-widest mb-1">Email</p>
-                                    <p className="text-2xl font-bold tracking-tight">hello@jbabawale.com</p>
+                                    <p className="text-2xl font-bold tracking-tight">jbabawale1@gmail.com</p>
                                 </div>
                             </a>
 
@@ -84,7 +85,7 @@ export function Contact() {
                 </div>
 
                 <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-white/20 text-xs font-black uppercase tracking-[0.3em]">
-                    <p>© 2026 J BABAWALE • MIDE29TH DESIGN</p>
+                    <p>© 2026 JOSHUA BABAWALE • MIDE29TH DESIGN</p>
                     <div className="flex gap-12">
                         <a href="#" className="hover:text-white transition-colors">Privacy</a>
                         <a href="#" className="hover:text-white transition-colors">Terms</a>

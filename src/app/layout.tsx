@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "J Babawale | Designer & Builder",
-  description: "Personal portfolio of J Babawale, a designer and builder crafting premium digital experiences.",
+  title: "Joshua Babawale | Designer and AI Builder",
+  description: "Personal portfolio of Joshua Babawale, a designer and AI builder crafting premium digital experiences.",
 };
 
 export default function RootLayout({

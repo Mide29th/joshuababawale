@@ -32,7 +32,7 @@ export function About() {
                             transition={{ duration: 0.8 }}
                             className="text-6xl md:text-[5.5rem] font-bold tracking-tighter leading-[0.9] font-serif mb-12"
                         >
-                            J Babawale <br />
+                            Joshua Babawale <br />
                             <span className="text-black/20 italic font-medium">Digital Nomad</span>
                         </motion.h2>
 

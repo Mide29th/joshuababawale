@@ -52,7 +52,7 @@ export function Hero() {
                 >
                     <Image
                         src="/profile.png"
-                        alt="J Babawale"
+                        alt="Joshua Babawale"
                         fill
                         className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
                         priority
@@ -66,7 +66,7 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
                     className="text-6xl md:text-[8rem] font-bold tracking-tight mb-4 font-serif leading-[0.9]"
                 >
-                    J Babawale
+                    Joshua Babawale
                 </motion.h1>
 
                 <motion.p
@@ -75,7 +75,7 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
                     className="text-xl md:text-3xl text-black/50 font-medium tracking-tight"
                 >
-                    Independent Designer & Digital Fixer
+                    Designer and AI Builder
                 </motion.p>
 
                 <motion.div
