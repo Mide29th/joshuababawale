@@ -12,28 +12,32 @@ const projects = [
         category: "Product Design",
         description: "A comprehensive laundry and dry-cleaning solution that simplifies garment care through an intuitive digital experience.",
         image: "/projects/helloclean.png",
-        color: "bg-[#18A5AA]"
+        color: "bg-[#18A5AA]",
+        href: "https://www.behance.net/gallery/235127333/HelloClean"
     },
     {
         title: "Aura Real Estate",
         category: "Website",
         description: "High-end property discovery platform with interactive maps.",
         image: null,
-        color: "bg-slate-900"
+        color: "bg-slate-900",
+        href: "#"
     },
     {
         title: "Eco-Track Dashboard",
         category: "Case Study",
         description: "Sustainability metrics visualization for green startups.",
         image: null,
-        color: "bg-emerald-900"
+        color: "bg-emerald-900",
+        href: "#"
     },
     {
         title: "Nomad Lens",
         category: "Website",
         description: "Photography portfolio with seamless transition effects.",
         image: null,
-        color: "bg-zinc-800"
+        color: "bg-zinc-800",
+        href: "#"
     }
 ];
 
@@ -61,13 +65,16 @@ export function Projects() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20">
                     {projects.map((project, idx) => (
-                        <motion.div
+                        <motion.a
                             key={project.title}
+                            href={project.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 1, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                            className="group cursor-pointer"
+                            className="group cursor-pointer block"
                         >
                             <div className={cn(
                                 "relative aspect-[4/5] rounded-[2.5rem] overflow-hidden mb-8 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all duration-700 group-hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.15)] group-hover:-translate-y-2",
@@ -103,7 +110,7 @@ export function Projects() {
                                     <span className="text-black/30 font-bold uppercase tracking-widest text-xs">{project.category}</span>
                                 </div>
                             </div>
-                        </motion.div>
+                        </motion.a>
                     ))}
                 </div>
             </div>
