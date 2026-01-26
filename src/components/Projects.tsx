@@ -8,11 +8,11 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
     {
-        title: "Dunmade",
-        category: "Case Study",
-        description: "Brand identity and product design for luxury home goods.",
-        image: "/projects/dunmade.png",
-        color: "bg-[#0047AB]"
+        title: "HelloClean",
+        category: "Product Design",
+        description: "A comprehensive laundry and dry-cleaning solution that simplifies garment care through an intuitive digital experience.",
+        image: "/projects/helloclean.png",
+        color: "bg-[#18A5AA]"
     },
     {
         title: "Aura Real Estate",
