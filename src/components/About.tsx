@@ -12,6 +12,12 @@ const gridImages = [
     { src: "/profile.png", alt: "Design 5", className: "col-span-1 row-span-1" },
 ];
 
+const metrics = [
+    { label: "Efficiency", value: "60%", description: "Workflow speed" },
+    { label: "Reach", value: "3x", description: "Engagement" },
+    { label: "Projects", value: "50+", description: "Completed" },
+];
+
 export function About() {
     return (
         <section id="about" className="relative py-32 px-4 bg-[#fdfdfd] overflow-hidden">
@@ -45,9 +51,22 @@ export function About() {
                             <p>
                                 Based anywhere there's a problem to solve. I specialize in bridging the gap between design and high-performance development.
                             </p>
-                            <p>
-                                I believe in software that feels alive—responsive, intuitive, and visually stunning. Every pixel is purposeful.
-                            </p>
+                        </motion.div>
+
+                        {/* Integrated Stats */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.3 }}
+                            className="mt-12 grid grid-cols-3 gap-8 max-w-lg"
+                        >
+                            {metrics.map((metric) => (
+                                <div key={metric.label} className="flex flex-col">
+                                    <span className="text-3xl font-black text-accent tracking-tighter">{metric.value}</span>
+                                    <span className="text-xs font-bold uppercase tracking-widest text-black/40 mt-1">{metric.label}</span>
+                                    <span className="text-[10px] text-black/30 font-medium mt-0.5">{metric.description}</span>
+                                </div>
+                            ))}
                         </motion.div>
 
                         <motion.div
@@ -63,6 +82,7 @@ export function About() {
                             ))}
                         </motion.div>
                     </div>
+
 
                     <div className="grid grid-cols-2 grid-rows-3 gap-4 h-[600px] md:h-[800px]">
                         {gridImages.map((image, idx) => (

@@ -108,10 +108,34 @@ body::before {
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+
 .dark-section {
   --background: #000000;
   --foreground: #ffffff;
   --accent-glow: rgba(0, 81, 255, 0.2);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee2 {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee2 {
+  animation: marquee2 30s linear infinite;
+}
+
+.group:hover .animate-marquee,
+.group:hover .animate-marquee2 {
+  animation-play-state: paused;
 }
 
 ::selection {
