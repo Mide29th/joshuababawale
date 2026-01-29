@@ -49,7 +49,7 @@ export function About() {
                             className="space-y-8 text-xl text-black/60 font-medium leading-relaxed max-w-lg"
                         >
                             <p>
-                                Based anywhere there's a problem to solve. I specialize in bridging the gap between design and high-performance development.
+                                Based anywhere there's a problem to solve. I specialize in creating simple and innovative solutions that user friendly and business oriented.
                             </p>
                         </motion.div>
 
