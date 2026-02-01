@@ -16,28 +16,20 @@ const projects = [
         href: "https://www.behance.net/gallery/235127333/HelloClean"
     },
     {
-        title: "Aura Real Estate",
-        category: "Website",
-        description: "High-end property discovery platform with interactive maps.",
-        image: null,
-        color: "bg-slate-900",
-        href: "#"
+        title: "OsunFix",
+        category: "Civic Tech",
+        description: "A community-driven platform for reporting infrastructure issues and tracking repairs in Osun State.",
+        image: "/projects/osunfix_ui.png",
+        color: "bg-emerald-600",
+        href: "https://osunfix.vercel.app/"
     },
     {
-        title: "Eco-Track Dashboard",
-        category: "Case Study",
-        description: "Sustainability metrics visualization for green startups.",
-        image: null,
-        color: "bg-emerald-900",
-        href: "#"
-    },
-    {
-        title: "Nomad Lens",
-        category: "Website",
-        description: "Photography portfolio with seamless transition effects.",
-        image: null,
-        color: "bg-zinc-800",
-        href: "#"
+        title: "Jitter Converter",
+        category: "Web Utility",
+        description: "A specialized tool for converting animation data, designed to streamline Jitter-based workflows.",
+        image: "/projects/jitter_converter_ui.png",
+        color: "bg-indigo-600",
+        href: "https://jitter-converter.vercel.app/"
     }
 ];
 
