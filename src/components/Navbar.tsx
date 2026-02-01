@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
     { name: "Work", href: "#portfolio" },
+    { name: "Visuals", href: "#flyers" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
 ];
@@ -51,11 +52,11 @@ export function Navbar() {
                         {item.name}
                     </a>
                 ))}
-                
+
                 <div className="h-6 w-[1px] bg-black/5 mx-1" />
-                
-                <a 
-                    href="#contact" 
+
+                <a
+                    href="#contact"
                     className="px-5 py-2.5 rounded-full text-sm font-semibold bg-black text-white hover:bg-black/80 transition-all active:scale-95"
                 >
                     Hire
