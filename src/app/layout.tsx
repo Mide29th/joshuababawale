@@ -3,8 +3,8 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Joshua Babawale | Designer and AI Builder",
-  description: "Personal portfolio of Joshua Babawale, a designer and AI builder crafting premium digital experiences.",
+  title: "Joshua Babawale | Designer, Product Manager and AI Builder",
+  description: "Personal portfolio of Joshua Babawale, a designer, product manager and AI builder crafting premium digital experiences.",
 };
 
 export default function RootLayout({

@@ -85,11 +85,12 @@ export function Hero() {
                     className="mt-14 flex flex-wrap justify-center gap-3"
                 >
                     <div className="px-6 py-2.5 rounded-full border border-black/5 bg-white/50 backdrop-blur-sm text-sm font-semibold flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+                        Product Manager @ Ibloov
+                    </div>
+                    <div className="px-6 py-2.5 rounded-full border border-black/5 bg-white/50 backdrop-blur-sm text-sm font-semibold flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                         Available for Projects
-                    </div>
-                    <div className="px-6 py-2.5 rounded-full border border-black/5 bg-white/50 backdrop-blur-sm text-sm font-semibold">
-                        Digital Nomad
                     </div>
                 </motion.div>
             </motion.div>

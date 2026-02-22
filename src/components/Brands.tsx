@@ -5,6 +5,15 @@ import Image from "next/image";
 
 const brands = [
     {
+        name: "Ibloov",
+        logo: "/brands/ibloov.png",
+        scale: 4,
+    },
+    {
+        name: "Innox Technologies",
+        logo: "/brands/innox.png",
+    },
+    {
         name: "DoroMecho",
         logo: "/brands/doromecho.png",
     },
@@ -15,10 +24,12 @@ const brands = [
     {
         name: "Fruitieways",
         logo: "/brands/fruitieways.png",
+        scale: 2,
     },
     {
         name: "Dunmade",
         logo: "/brands/dunmade.png",
+        scale: 2,
     },
     {
         name: "Osun New Era Lions Club",
@@ -27,6 +38,7 @@ const brands = [
     {
         name: "House on the Rock",
         logo: "/brands/hotr.png",
+        scale: 1.3,
     },
 ];
 
@@ -61,14 +73,23 @@ export const Brands = () => {
                                 key={`${brand.name}-${index}`}
                                 className="mx-8 flex items-center justify-center transition-all duration-500 hover:scale-110"
                             >
-                                <div className="px-8 py-4 bg-white/80 backdrop-blur-md rounded-2xl border border-black/5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex items-center justify-center min-w-[200px] h-[100px]">
-                                    <Image
-                                        src={brand.logo}
-                                        alt={brand.name}
-                                        width={120}
-                                        height={60}
-                                        className="object-contain max-h-[60px]"
-                                    />
+                                <div className="px-8 py-4 bg-white/80 backdrop-blur-md rounded-2xl border border-black/5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex items-center justify-center min-w-[200px] h-[100px] overflow-hidden">
+                                    <div
+                                        style={{
+                                            transform: `scale(${brand.scale || 1})`,
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
+                                        }}
+                                    >
+                                        <Image
+                                            src={brand.logo}
+                                            alt={brand.name}
+                                            width={120}
+                                            height={60}
+                                            className="object-contain max-h-[60px]"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -80,14 +101,23 @@ export const Brands = () => {
                                 key={`${brand.name}-duplicate-${index}`}
                                 className="mx-8 flex items-center justify-center transition-all duration-500 hover:scale-110"
                             >
-                                <div className="px-8 py-4 bg-white/80 backdrop-blur-md rounded-2xl border border-black/5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex items-center justify-center min-w-[200px] h-[100px]">
-                                    <Image
-                                        src={brand.logo}
-                                        alt={brand.name}
-                                        width={120}
-                                        height={60}
-                                        className="object-contain max-h-[60px]"
-                                    />
+                                <div className="px-8 py-4 bg-white/80 backdrop-blur-md rounded-2xl border border-black/5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex items-center justify-center min-w-[200px] h-[100px] overflow-hidden">
+                                    <div
+                                        style={{
+                                            transform: `scale(${brand.scale || 1})`,
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
+                                        }}
+                                    >
+                                        <Image
+                                            src={brand.logo}
+                                            alt={brand.name}
+                                            width={120}
+                                            height={60}
+                                            className="object-contain max-h-[60px]"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         ))}
