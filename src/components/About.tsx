@@ -14,7 +14,7 @@ const metrics = [
 
 export function About() {
     return (
-        <section id="about" className="relative py-32 px-4 bg-[#fdfdfd] overflow-hidden">
+        <section id="about" className="relative py-24 md:py-32 px-4 bg-[#fdfdfd] overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
                     <div className="relative z-10 w-full">

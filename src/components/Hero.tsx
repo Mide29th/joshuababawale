@@ -16,7 +16,7 @@ export function Hero() {
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
     return (
-        <section ref={containerRef} className="relative min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-20 px-4 overflow-hidden">
+        <section ref={containerRef} className="relative min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-16 md:pt-32 md:pb-20 px-4 overflow-hidden">
             {/* Decorative Background Text Case 1 */}
             <motion.div
                 style={{ y: y1 }}

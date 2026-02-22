@@ -70,7 +70,7 @@ const flyers = [
 
 export function Flyers() {
     return (
-        <section id="flyers" className="py-32 px-4 bg-[#F2F2F2]">
+        <section id="flyers" className="py-24 md:py-32 px-4 bg-[#F2F2F2]">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
                     <div>

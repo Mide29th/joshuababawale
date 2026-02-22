@@ -45,7 +45,7 @@ const brands = [
 
 export const Brands = () => {
     return (
-        <section className="py-24 relative overflow-hidden bg-[var(--background)]">
+        <section className="py-16 md:py-24 relative overflow-hidden bg-[var(--background)]">
             {/* Background radial gradient for depth - simplified for light mode */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,81,255,0.03),transparent_70%)]" />
 

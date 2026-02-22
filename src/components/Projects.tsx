@@ -35,7 +35,7 @@ const projects = [
 
 export function Projects() {
     return (
-        <section id="portfolio" className="py-32 px-4 bg-white">
+        <section id="portfolio" className="py-24 md:py-32 px-4 bg-white">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
                     <div>

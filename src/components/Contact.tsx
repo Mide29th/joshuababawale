@@ -14,12 +14,12 @@ const socialLinks = [
 
 export function Contact() {
     return (
-        <footer id="contact" className="relative bg-[#050505] text-white pt-40 pb-16 px-4 overflow-hidden">
+        <footer id="contact" className="relative bg-[#050505] text-white pt-32 pb-16 md:pt-40 md:pb-16 px-4 overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-accent/10 blur-[150px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 mb-40">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-20 md:mb-40">
                     <div>
                         <motion.span
                             initial={{ opacity: 0 }}
@@ -40,24 +40,24 @@ export function Contact() {
                             Have a vision? Let's turn it into a premium digital reality.
                         </p>
 
-                        <div className="space-y-8">
-                            <a href="mailto:jbabawale1@gmail.com" className="flex items-center gap-6 group">
-                                <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-all duration-500 scale-90 group-hover:scale-100">
-                                    <Mail className="w-6 h-6" />
+                        <div className="space-y-6 md:space-y-8">
+                            <a href="mailto:jbabawale1@gmail.com" className="flex items-center gap-4 md:gap-6 group">
+                                <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-all duration-500 scale-90 group-hover:scale-100 shrink-0">
+                                    <Mail className="w-5 h-5 md:w-6 md:h-6" />
                                 </div>
-                                <div>
-                                    <p className="text-xs text-white/20 uppercase font-black tracking-widest mb-1">Email</p>
-                                    <p className="text-2xl font-bold tracking-tight">jbabawale1@gmail.com</p>
+                                <div className="min-w-0">
+                                    <p className="text-[10px] md:text-xs text-white/20 uppercase font-black tracking-widest mb-1">Email</p>
+                                    <p className="text-lg sm:text-2xl font-bold tracking-tight break-all">jbabawale1@gmail.com</p>
                                 </div>
                             </a>
 
-                            <div className="flex items-center gap-6 group">
-                                <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
-                                    <MapPin className="w-6 h-6" />
+                            <div className="flex items-center gap-4 md:gap-6 group">
+                                <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                    <MapPin className="w-5 h-5 md:w-6 md:h-6" />
                                 </div>
-                                <div>
-                                    <p className="text-xs text-white/20 uppercase font-black tracking-widest mb-1">Location</p>
-                                    <p className="text-2xl font-bold tracking-tight">Digital Nomad</p>
+                                <div className="min-w-0">
+                                    <p className="text-[10px] md:text-xs text-white/20 uppercase font-black tracking-widest mb-1">Location</p>
+                                    <p className="text-lg sm:text-2xl font-bold tracking-tight">Digital Nomad</p>
                                 </div>
                             </div>
                         </div>

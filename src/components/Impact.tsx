@@ -31,7 +31,7 @@ function CountUp({ value, suffix }: { value: number; suffix: string }) {
 
 export function Impact() {
     return (
-        <section className="py-32 px-4 bg-white/30 backdrop-blur-sm border-y border-black/5 relative overflow-hidden">
+        <section className="py-24 md:py-32 px-4 bg-white/30 backdrop-blur-sm border-y border-black/5 relative overflow-hidden">
             {/* Soft Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-accent/5 blur-[120px] pointer-events-none" />
 
