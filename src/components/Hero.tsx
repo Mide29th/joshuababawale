@@ -86,7 +86,7 @@ export function Hero() {
                 >
                     <div className="px-6 py-2.5 rounded-full border border-black/5 bg-white/50 backdrop-blur-sm text-sm font-semibold flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-                        Product Manager @ Ibloov
+                        Product Lead @ Ibloov Africa
                     </div>
                     <div className="px-6 py-2.5 rounded-full border border-black/5 bg-white/50 backdrop-blur-sm text-sm font-semibold flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
