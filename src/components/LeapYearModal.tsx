@@ -176,7 +176,7 @@ export function LeapYearModal() {
 
                                     <h3 className="text-3xl font-serif font-bold text-center mb-1 shrink-0 text-gray-900 leading-tight">
                                         Leap Year Problems <motion.span
-                                            display="inline-block"
+                                            className="inline-block"
                                             animate={{ rotate: [0, 10, -10, 0] }}
                                             transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 3 }}
                                         >🐸</motion.span>
@@ -207,8 +207,8 @@ export function LeapYearModal() {
                                             onClick={prevJoke}
                                             disabled={currentIndex === 0}
                                             className={`p-4 rounded-2xl font-medium transition-all duration-300 flex justify-center items-center gap-2 border ${currentIndex === 0
-                                                    ? "bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed"
-                                                    : "bg-white text-gray-700 border-gray-200 hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-600 hover:shadow-sm"
+                                                ? "bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed"
+                                                : "bg-white text-gray-700 border-gray-200 hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-600 hover:shadow-sm"
                                                 }`}
                                             aria-label="Previous Joke"
                                         >
