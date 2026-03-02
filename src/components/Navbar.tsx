@@ -75,7 +75,9 @@ export function Navbar() {
                     <div className="h-6 w-[1px] bg-black/5 mx-1" />
 
                     <a
-                        href="#contact"
+                        href={isOpen ? "#contact" : "https://wa.me/2349037311817"}
+                        target={isOpen ? undefined : "_blank"}
+                        rel={isOpen ? undefined : "noopener noreferrer"}
                         className="px-5 py-2.5 rounded-full text-sm font-semibold bg-black text-white hover:bg-black/80 transition-all active:scale-95"
                         onClick={closeMenu}
                     >
